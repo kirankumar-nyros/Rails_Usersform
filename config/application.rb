@@ -46,6 +46,7 @@ module PaperclipFile
     # This is necessary if your schema can't be completely dumped by the schema dumper,
     # like if you have constraints or database-specific column types
     # config.active_record.schema_format = :sql
+    config.assets.initialize_on_precompile = false
 
     # Enforce whitelist mode for mass assignment.
     # This will create an empty whitelist of attributes available for mass-assignment for all models
@@ -60,4 +61,3 @@ module PaperclipFile
     config.assets.version = '1.0'
   end
 end
-51112272995
